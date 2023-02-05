@@ -38,9 +38,7 @@ export function filteredForActivity(activity) {
 export function filterForName(string) {
   return async function(dispatch) {
     try {
-      let res = await axios.get(
-          `http://localhost:3001/countries?name=${string}`
-        ),
+      let res = await axios.get(`/countries?name=${string}`),
         json = await res.data;
       return dispatch({
         type: "FILTER_FOR_NAME",
@@ -69,7 +67,7 @@ export function order_population(string) {
 export function get_detail(id) {
   return async function(dispatch) {
     try {
-      const res = await axios.get(`http://localhost:3001/countries/${id}`),
+      const res = await axios.get(`/countries/${id}`),
         json = await res.data;
       return dispatch({
         type: "GET_DETAIL",
@@ -91,10 +89,7 @@ export function addCountriesForm(country) {
 export function createActivity(data) {
   return async function() {
     try {
-      const response = await axios.post(
-        "http://localhost:3001/activities",
-        data
-      );
+      const response = await axios.post("/activities", data);
       alert("The activity was satisfactorily created");
       console.log(response.data);
     } catch (error) {
