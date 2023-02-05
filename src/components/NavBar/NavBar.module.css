@@ -1,0 +1,9 @@
+.container{
+    margin-top: 1rem;
+    width: 110%;
+    margin-left: -7%;            
+}
+.container label{
+    margin-right: 1%;
+    margin-left: 1%;
+}

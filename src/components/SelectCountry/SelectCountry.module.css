@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.containerImages{    
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containerImages img{
+    width: 50%;
+    padding: 5px;
+}
+.containerImages button{
+    width: 30%;    
+}
+.containerImages h5{
+    margin-top: 1px;   
+}
+p{
+    color: red;
+    margin-left: auto;
+    margin-right: auto;
+}

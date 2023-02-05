@@ -1,0 +1,17 @@
+.container{
+    background-color: rgba(220, 220, 220, 0.5);
+    width: 17%;     
+    height: 20%;
+    border: solid 1px black;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 1rem;              
+}
+.container img{
+    width: 50%;
+    height: 80px;
+}
+.container p{
+    color: black;
+    
+}

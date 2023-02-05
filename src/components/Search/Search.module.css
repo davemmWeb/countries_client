@@ -1,0 +1,15 @@
+.container{
+    margin-top: 1rem; 
+    background-color: rgba(120, 120, 120, 0.2);
+    width: 90%;
+    margin-left:auto;
+    margin-right:auto;    
+}
+.create{
+    position: absolute;
+    top: 2.6%;
+    margin-left: 35%;     
+    color: aliceblue;   
+    text-decoration: none;
+    border: solid 1px aliceblue;
+}

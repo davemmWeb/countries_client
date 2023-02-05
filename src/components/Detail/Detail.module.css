@@ -1,0 +1,50 @@
+.container{
+    width: 90%;
+    height: 40em;
+    background-color: rgba(220,220,220,0.5);    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+}
+.flag{         
+    display: flex;
+    flex-wrap: wrap;    
+}
+.flag h1{
+    margin-left: 16%;
+    margin-right: 10%;
+    margin-top: 6rem;
+    font-size: 60px;
+}
+.flag img{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2rem;
+}
+.containerData{    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1rem;    
+}
+.table{
+    width: 45%; 
+    border: solid 1px black;
+    margin-right: 1%;   
+    margin-left: 1%;   
+}
+.titles{
+    width: 80%;
+    margin-left: 80%;        
+}
+.back{
+    position: absolute;
+    top: 3%;
+    margin-left: 40%;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+

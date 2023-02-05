@@ -1,0 +1,34 @@
+.container{
+    margin-top: 20%;
+    background-color: rgba(80, 80, 80, 0.8);
+    width: 25%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container h2{
+    color: aliceblue;
+}
+.button{
+    margin-top: 10px;
+    color: aliceblue;
+    width: 40%;
+    height: 30px;    
+    border: solid 2px rgb(211, 211, 232);
+    border-radius: 5px;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    cursor: pointer;   
+    animation-duration: 1.5s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+@keyframes slidein{
+    from {
+        background-color: rgb(56, 56, 199);
+    }
+    to{
+        background-color: rgb(196, 203, 86);
+        transform: scale(1.1)
+    }
+}
