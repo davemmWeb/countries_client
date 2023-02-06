@@ -11,15 +11,16 @@ export const CREATE_ACTIVITY = "CREATE_ACTIVITY";
 
 export function addData() {
   return async function(dispatch) {
-    fetch("http://localhost:3001/countries")
-      .then((response) => response.json())
-      .then((data) => {
-        return dispatch({
-          type: "ADD_DATA",
-          payload: data,
-        });
-      })
-      .catch((err) => console.log(err.message));
+    try {
+      let res = await axios.get("/countries"),
+        json = await res.data;
+      return dispatch({
+        type: "ADD_DATA",
+        payload: json,
+      });
+    } catch (error) {
+      console.log(error.message);
+    }
   };
 }
 export function filterForContinent(status) {
