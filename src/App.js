@@ -7,6 +7,11 @@ import { Main } from "./components/Main/Main";
 import Detail from "./components/Detail/Detail";
 import Form from "./components/Form/Form";
 import Error from "./components/Error/Error";
+import axios from "axios";
+
+// axios.defaults.baseURL = "http://localhost:3001";
+axios.defaults.baseURL =
+  "https://countriesback-production-0f6d.up.railway.app/";
 
 function App() {
   const location = useLocation();
